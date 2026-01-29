@@ -7,6 +7,10 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconBluesky from "@/assets/icons/IconBluesky.svg";
+import IconMastodon from "@/assets/icons/IconMastodon.svg";
+import IconInstagram from "@/assets/icons/IconInstagram.svg";
+import IconYoutube from "@/assets/icons/IconYoutube.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -18,16 +22,40 @@ interface Social {
 
 export const SOCIALS: Social[] = [
   {
+    name: "X",
+    href: "https://x.com/film_girl",
+    linkTitle: `${SITE.author} on X`,
+    icon: IconBrandX,
+  },
+  {
     name: "GitHub",
     href: "https://github.com/filmgirl",
     linkTitle: `${SITE.author} on GitHub`,
     icon: IconGitHub,
   },
   {
-    name: "X",
-    href: "https://x.com/film_girl",
-    linkTitle: `${SITE.author} on X`,
-    icon: IconBrandX,
+    name: "Bluesky",
+    href: "https://bsky.app/profile/filmgirl.bsky.social",
+    linkTitle: `${SITE.author} on Bluesky`,
+    icon: IconBluesky,
+  },
+  {
+    name: "Mastodon",
+    href: "https://mastodon.social/@film_girl",
+    linkTitle: `${SITE.author} on Mastodon`,
+    icon: IconMastodon,
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/film_girl",
+    linkTitle: `${SITE.author} on Instagram`,
+    icon: IconInstagram,
+  },
+  {
+    name: "YouTube",
+    href: "https://youtube.com/@ChristinaWarren",
+    linkTitle: `${SITE.author} on YouTube`,
+    icon: IconYoutube,
   },
   {
     name: "LinkedIn",
