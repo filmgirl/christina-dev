@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://christina.dev/",
+  author: "Christina Warren",
+  profile: "https://christina.dev/",
+  desc: "Developer | Content Creator | Opinion Haver | Pop Culture Devotee",
+  title: "Christina Warren",
+  ogImage: "og.jpg",
+  lightAndDarkMode: true,
+  postPerIndex: 4,
+  postPerPage: 8,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "Edit page",
+    url: "https://github.com/filmgirl/christina-dev/edit/main/",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "en",
+  timezone: "America/Los_Angeles",
+} as const;

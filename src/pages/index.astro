@@ -1,0 +1,124 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import Card from "@/components/Card.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
+import IconRss from "@/assets/icons/IconRss.svg";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
+
+const posts = await getCollection("blog");
+
+const sortedPosts = getSortedPosts(posts);
+const recentPosts = sortedPosts.slice(0, SITE.postPerIndex);
+---
+
+<Layout>
+  <Header />
+  <main id="main-content" data-layout="index" class="app-layout">
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col md:flex-row items-center gap-8 pt-8 pb-10 border-b border-border">
+      <div class="flex-1 text-center md:text-left">
+        <div class="flex items-center gap-3 justify-center md:justify-start mb-4">
+          <h1 class="text-3xl sm:text-4xl font-bold">
+            Christina Warren
+          </h1>
+          <a
+            target="_blank"
+            href="/rss.xml"
+            class="inline-block"
+            aria-label="rss feed"
+            title="RSS Feed"
+          >
+            <IconRss
+              width={20}
+              height={20}
+              class="scale-125 stroke-accent stroke-3"
+            />
+          </a>
+        </div>
+        <p class="text-lg text-foreground/80 mb-4">
+          Developer · Content Creator · Opinion Haver · Pop Culture Devotee
+        </p>
+        <p class="mb-6">
+          I work in Developer Relations at GitHub. Journalist turned developer with a passion 
+          for making technology accessible and engaging.
+        </p>
+        {SOCIALS.length > 0 && (
+          <div class="flex items-center justify-center md:justify-start gap-2">
+            <Socials />
+          </div>
+        )}
+      </div>
+      <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border border-border flex-shrink-0">
+        <img 
+          src="/profile.png" 
+          alt="Christina Warren" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section id="quick-links" class="pt-10 pb-8 border-b border-border">
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/about" class="group block p-5 rounded-lg border border-border hover:border-accent transition-colors">
+          <div class="text-2xl mb-2">✨</div>
+          <h2 class="font-semibold text-accent group-hover:underline decoration-dashed underline-offset-4 mb-1">About Me</h2>
+          <p class="text-sm text-foreground/70">
+            Learn more about my background, current work, and what makes me tick.
+          </p>
+        </a>
+
+        <a href="/posts" class="group block p-5 rounded-lg border border-border hover:border-accent transition-colors">
+          <div class="text-2xl mb-2">📝</div>
+          <h2 class="font-semibold text-accent group-hover:underline decoration-dashed underline-offset-4 mb-1">Blog</h2>
+          <p class="text-sm text-foreground/70">
+            Thoughts on tech, development, media, and whatever else is on my mind.
+          </p>
+        </a>
+
+        <a href="https://github.com/filmgirl" target="_blank" rel="noopener" class="group block p-5 rounded-lg border border-border hover:border-accent transition-colors">
+          <div class="text-2xl mb-2">🚀</div>
+          <h2 class="font-semibold text-accent group-hover:underline decoration-dashed underline-offset-4 mb-1">Projects</h2>
+          <p class="text-sm text-foreground/70">
+            Check out what I've been building on GitHub.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    {recentPosts.length > 0 && (
+      <section id="recent-posts" class="pt-10 pb-6">
+        <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+        <ul>
+          {recentPosts.map(data => <Card variant="h3" {...data} />)}
+        </ul>
+      </section>
+    )}
+
+    <div class="my-8 text-center">
+      <LinkButton href="/posts/">
+        All Posts
+        <IconArrowRight class="inline-block rtl:-rotate-180" />
+      </LinkButton>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset?.layout;
+    if (indexLayout) {
+      sessionStorage.setItem("backUrl", "/");
+    }
+  });
+</script>
