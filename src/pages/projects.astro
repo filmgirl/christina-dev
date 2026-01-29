@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  {
+    title: "GitHub Copilot",
+    description: "Working on developer experience and advocacy for GitHub's AI pair programmer.",
+    tags: ["AI", "Developer Tools", "GitHub"],
+    link: "https://github.com/features/copilot",
+    emoji: "🤖"
+  },
+  {
+    title: "Developer Relations",
+    description: "Creating content, building community, and helping developers succeed with GitHub's tools and platform.",
+    tags: ["DevRel", "Community", "Content"],
+    link: "https://github.com",
+    emoji: "💜"
+  },
+  {
+    title: "YouTube Channel",
+    description: "Videos about tech, development, and the intersection of technology and culture.",
+    tags: ["Video", "Content", "Tech"],
+    link: "https://youtube.com/@ChristinaWarren",
+    emoji: "🎬"
+  },
+  {
+    title: "Open Source Contributions",
+    description: "Contributing to open source projects and helping make developer tools better for everyone.",
+    tags: ["Open Source", "Community"],
+    link: "https://github.com/filmgirl",
+    emoji: "⭐"
+  }
+];
+---
+
+<BaseLayout title="Projects | Christina Warren">
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <header class="mb-12">
+      <h1 class="font-display text-4xl md:text-5xl font-bold gradient-text glow-text mb-4">
+        Projects
+      </h1>
+      <p class="text-xl text-vapor-muted">
+        Things I'm working on and building.
+      </p>
+    </header>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {projects.map((project) => (
+        <a 
+          href={project.link} 
+          target="_blank" 
+          rel="noopener"
+          class="group block p-6 rounded-xl border border-vapor-purple/30 bg-vapor-darker/50 hover:border-vapor-pink/50 hover:bg-vapor-darker/80 transition-all glow-box"
+        >
+          <div class="text-4xl mb-4">{project.emoji}</div>
+          <h2 class="font-display text-xl font-semibold text-vapor-text group-hover:text-vapor-pink transition-colors mb-2">
+            {project.title}
+            <span class="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+          </h2>
+          <p class="text-vapor-muted text-sm mb-4">
+            {project.description}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <span class="px-2 py-1 rounded-full text-xs border border-vapor-cyan/30 text-vapor-cyan bg-vapor-cyan/10">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-16 p-6 rounded-xl border border-vapor-purple/30 bg-vapor-darker/50">
+      <h2 class="font-display text-xl font-semibold text-vapor-text mb-4">Want to collaborate?</h2>
+      <p class="text-vapor-muted mb-4">
+        I'm always interested in working on interesting projects, especially those involving developer tools, 
+        AI, and making technology more accessible.
+      </p>
+      <a 
+        href="https://twitter.com/film_girl" 
+        target="_blank" 
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-vapor-purple text-white font-medium hover:bg-vapor-pink transition-colors"
+      >
+        Get in touch
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

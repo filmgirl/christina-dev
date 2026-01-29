@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+---
+
+<BaseLayout title="About | Christina Warren">
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <header class="mb-12">
+      <h1 class="font-display text-4xl md:text-5xl font-bold gradient-text glow-text mb-4">
+        About Me
+      </h1>
+      <p class="text-xl text-vapor-muted">
+        Developer, content creator, and tech enthusiast.
+      </p>
+    </header>
+
+    <div class="prose prose-invert prose-lg max-w-none space-y-8">
+      <section>
+        <h2 class="font-display text-2xl font-semibold text-vapor-pink mb-4">Professional Background</h2>
+        <p class="text-vapor-text leading-relaxed">
+          I work in Developer Relations at <span class="text-vapor-cyan">GitHub</span> and have previously worked at 
+          <span class="text-vapor-magenta">Google DeepMind</span> and <span class="text-vapor-purple">Microsoft</span>. 
+          I'm a journalist turned developer with a passion for making technology accessible and engaging.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-semibold text-vapor-cyan mb-4">Current Focus</h2>
+        <p class="text-vapor-text leading-relaxed">
+          Building tools and content that help developers succeed. I'm obsessed with tech, open source software, 
+          and finding ways to bridge the gap between complex technology and everyday users.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-semibold text-vapor-magenta mb-4">Personal Interests</h2>
+        <p class="text-vapor-text leading-relaxed">
+          I'm obsessed with tech, media, and pop culture. My current special interests are: 
+          <span class="text-vapor-pink">The Pitt</span>, <span class="text-vapor-cyan">Fallout</span>, 
+          <span class="text-vapor-magenta">AI dev tools</span>, the never-ending drama surrounding whoever the fuck owns 
+          <span class="text-vapor-purple">Warner Bros.</span>, and of course, 
+          <span class="text-vapor-pink">Taylor Swift</span>.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-semibold text-vapor-purple mb-4">Connect</h2>
+        <p class="text-vapor-text leading-relaxed mb-6">
+          Find me on the internet:
+        </p>
+        <SocialLinks size="lg" />
+      </section>
+    </div>
+  </article>
+</BaseLayout>

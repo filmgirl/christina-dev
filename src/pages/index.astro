@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+---
+
+<BaseLayout title="Christina Warren | Developer & Content Creator">
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-6 py-20 md:py-32">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="font-display text-4xl md:text-6xl font-bold mb-4">
+          <span class="gradient-text glow-text">Christina Warren</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-vapor-muted mb-6 font-medium">
+          Developer · Content Creator · Opinion Haver · Pop Culture Devotee
+        </p>
+        <p class="text-vapor-text text-lg max-w-xl mb-8 leading-relaxed">
+          I work in Developer Relations at GitHub. Journalist turned developer with a passion 
+          for making technology accessible and engaging.
+        </p>
+        <SocialLinks size="lg" />
+      </div>
+      <div class="w-48 h-48 md:w-64 md:h-64 rounded-full glow-box bg-gradient-to-br from-vapor-purple to-vapor-pink p-1">
+        <img 
+          src="/images/profile.png" 
+          alt="Christina Warren" 
+          class="w-full h-full rounded-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Sections -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- About Card -->
+      <a href="/about" class="group block p-6 rounded-xl border border-vapor-purple/30 bg-vapor-darker/50 hover:border-vapor-pink/50 hover:bg-vapor-darker/80 transition-all glow-box">
+        <div class="text-3xl mb-4">✨</div>
+        <h2 class="font-display text-xl font-semibold text-vapor-text group-hover:text-vapor-pink transition-colors mb-2">About Me</h2>
+        <p class="text-vapor-muted text-sm">
+          Learn more about my background, current work, and what makes me tick.
+        </p>
+      </a>
+
+      <!-- Projects Card -->
+      <a href="/projects" class="group block p-6 rounded-xl border border-vapor-purple/30 bg-vapor-darker/50 hover:border-vapor-cyan/50 hover:bg-vapor-darker/80 transition-all glow-box">
+        <div class="text-3xl mb-4">🚀</div>
+        <h2 class="font-display text-xl font-semibold text-vapor-text group-hover:text-vapor-cyan transition-colors mb-2">Projects</h2>
+        <p class="text-vapor-muted text-sm">
+          Check out what I've been building and the things I'm working on.
+        </p>
+      </a>
+
+      <!-- Blog Card -->
+      <a href="/blog" class="group block p-6 rounded-xl border border-vapor-purple/30 bg-vapor-darker/50 hover:border-vapor-magenta/50 hover:bg-vapor-darker/80 transition-all glow-box">
+        <div class="text-3xl mb-4">📝</div>
+        <h2 class="font-display text-xl font-semibold text-vapor-text group-hover:text-vapor-magenta transition-colors mb-2">Blog</h2>
+        <p class="text-vapor-muted text-sm">
+          Thoughts on tech, development, media, and whatever else is on my mind.
+        </p>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
