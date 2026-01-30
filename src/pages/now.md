@@ -7,7 +7,7 @@ fmContentType: now
 
 This is a [now page](https://nownownow.com/about). It's a snapshot of what I'm focused on at this point in my life.
 
-*Last updated: January 29, 2026*
+*Last updated: January 30, 2026*
 
 ## Work
 
