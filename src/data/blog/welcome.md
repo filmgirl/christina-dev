@@ -36,6 +36,6 @@ For the curious, this site is built with:
 - **Tailwind CSS** — for the styling
 - **GitHub Pages** — free hosting that just works
 
-Feel free to poke around, check out my [about page](/about), or browse the [blog posts](/posts).
+Feel free to poke around, check out my [about page](/about), or browse the [blog](/blog).
 
 Catch you later! ✨
