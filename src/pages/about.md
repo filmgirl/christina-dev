@@ -1,9 +1,12 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: About
+description: About Christina Warren
 ---
 
-I'm Christina Warren, and I work in Developer Relations at [GitHub](https://github.com). I've previously worked at Google DeepMind and Microsoft. I'm a journalist turned developer with a passion for making technology accessible and engaging.
+I'm Christina Warren, and I work in Developer Relations at [GitHub](https://github.com). I've previously worked at Google DeepMind and Microsoft and in a past life, I was a journalist at website's such as Gizmodo and Mashable, and was a frequent guest on CNN, CNBC, MSNBC Fox Business, Bloomberg, and other networks.
+
+At heart, I'm a writer and storyteller who loves technology and finding ways to make complex topics accessible and engaging. Over the years, I've written thousdands of articles, produced video content, and spoken at conferences around the world about technology, developer tools, AI, and the intersection of tech and culture.
 
 ## Professional Background
 
@@ -31,4 +34,4 @@ Find me around the internet:
 - **YouTube**: [@ChristinaWarren](https://youtube.com/@ChristinaWarren)
 - **Instagram**: [film_girl](https://instagram.com/film_girl)
 
-📍 Seattle, WA
+📍 Seattle, WA (but New York City will always be my home)
