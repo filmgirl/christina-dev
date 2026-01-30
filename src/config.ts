@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://christina.dev/",
   author: "Christina Warren",
   profile: "https://christina.dev/",
-  desc: "Developer | Content Creator | Opinion Haver | Pop Culture Devotee",
+  desc: "The homepage of Christina Warren, developer, writer, and content creator.",
   title: "christina.dev",
   ogImage: "og.jpg",
   lightAndDarkMode: true,
