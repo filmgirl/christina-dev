@@ -9,26 +9,28 @@ This is a [now page](https://nownownow.com/about). It's a snapshot of what I'm f
 
 ## Work
 
-Currently working in **Developer Relations at GitHub**, helping developers build amazing things with GitHub's tools and platform.
+I recently rejoined GitHub, after about a year at Google DeepMind. What can I say, GitHub is home. I'm a senior developer advocate, focusing on making GitHub the best place for developers. Modern software development inveitably means using AI tooling, so a lot of my work is focused on AI too.
 
 ## Current Projects
 
 - Building out this personal site
-- Exploring AI development tools and integrations
-- Creating content about developer productivity
+- Keeping up with the latest AI trends and dev tools
+- About to go on medical leave because I fucked up my cervical spine and need surgery (fun times!)
 
 ## Watching
 
-- **The Pitt** — obsessed with this show right now
-- **Fallout** — still thinking about it
+- **The Pitt** — this was my favorite show of 2025 and I'm super stoked that we got a second season so fast.
+- **Fallout** — my favorite show of 2024 returned for a second season. It's almost over, but it's still been great.
+- **Industry** - HBO does the good shit, no matter what.
 
 ## Reading
 
-*Add what you're currently reading*
+- **Half His Age** - the debut novel by Jennett McCurdy
+- **The Uncool** - Cameron Crowe's memoir
 
 ## Listening To
 
-Check out my Spotify for what I'm vibing to lately.
+I'll eventually put a Spotify playlist here of my current discoverires.
 
 ## Location
 

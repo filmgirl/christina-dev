@@ -7,7 +7,7 @@ draft: false
 tags:
   - meta
   - announcement
-description: Introducing christina.dev - my new home on the internet built with Astro Paper.
+description: Introducing christina.dev - my new home on the internet
 ---
 
 Hey there! Welcome to my new website. I've been meaning to build something that felt more *me* for a while, and I finally got around to it.
