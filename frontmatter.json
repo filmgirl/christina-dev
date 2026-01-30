@@ -50,6 +50,32 @@
           "name": "heroImage",
           "type": "image",
           "isPreviewImage": true
+        },
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "now",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
         }
       ]
     }

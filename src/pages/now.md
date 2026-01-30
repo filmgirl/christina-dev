@@ -1,6 +1,8 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "Now"
+title: Now
+description: The now page for Christina Warren
+fmContentType: now
 ---
 
 This is a [now page](https://nownownow.com/about). It's a snapshot of what I'm focused on at this point in my life.
